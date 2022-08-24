@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page with Background Image Example</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+<!-- partial:index.partial.html -->
+@*@using(Html.BeginForm("Index","Home",FormMethod.Post)){
+}*@
+<div id="bg"></div>
+
+<form method="post">
+  <div class="form-field">
+    <input name="UserName" type="text" placeholder="UserId" required/>
+  </div>
+  
+  <div class="form-field">
+    <input name="Password" type="password" placeholder="Password" required/>                     
+  </div>
+  
+  <div class="form-field">
+    <button id="btn" class="btn" type="submit">Log in</button>
+  </div>
+
+</form>
+<!-- partial -->
+  
+</body>
+</html>
